@@ -1,0 +1,14 @@
+{
+  "1": {
+    "title": "Addizione di numeri in un array",
+    "text": "Dato un array di numeri, restituire la loro somma fino a che non viene ritrovato un valore negativo.",
+    "value": [2, 5, 20, 1, 3, 4, 5, 6, 7, 8, 9, -1, 10],
+    "solution": 70
+  },
+  "2": {
+    "title": "Ricerca del valore massimo",
+    "text": "Si implementi una funzione che dato in input un array di numeri, restituisca il maggiore.",
+    "value": [2, 5, 0, -1, 3, 4, 5, 6, 7, 8, 9, -1, 10],
+    "solution": 10
+  }
+}

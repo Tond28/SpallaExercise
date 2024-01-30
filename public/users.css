@@ -1,0 +1,15 @@
+p_passed {
+  display: inline-block;
+  color: green;
+  font-weight: bold;
+  margin: 6px;
+  border: 1px solid gray;
+}
+
+p_failed {
+  display: inline-block;
+  color: red;
+  font-weight: bold;
+  margin: 6px;
+  border: 1px solid gray;
+}
