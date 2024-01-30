@@ -10,4 +10,11 @@ axios.post('http://localhost:8080/exercise', {
   exerciseId: 1,
   user: "test"
 }).then (res => {
-  console.log(res.data)})
+  axios.post('http://localhost:8080/submit', {
+    user: "test",
+    exerciseId: 1,
+    result: 40
+  }).then (res => {
+    console.log(res.data)})
+    .catch(err => console.error(err.response.data))
+  })

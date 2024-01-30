@@ -73,10 +73,10 @@ app.post("/submit", (req, res) => {
       res.status(404).json({message: "Exercise does not exist"})
     } else {
       if (exercises[exerciseId].solution === result) {
-        users[user].exercises[exerciseId].status = "PASSED"
+        users[user].exercises[exerciseId] = {status: "PASSED"}
         res.status(200).json({message: "Exercise passed"})
       } else {
-        users[user].exercises[exerciseId].status = "FAILED"
+        users[user].exercises[exerciseId] = {status: "FAILED"}
         res.status(200).json({message: "Exercise failed"})
       }
     }
